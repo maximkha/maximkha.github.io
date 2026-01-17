@@ -1,0 +1,270 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maxim Khanov</title>
+    <style>.header_container {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.links_container {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.links_layout_container {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    /* grid-template-columns: 0fr 1fr 1fr 1fr 1fr 0fr; */
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    align-items: center;
+    justify-items: center;
+}
+
+.links_layout_container > a {
+    justify-self: center;
+}
+
+.page_container {
+    grid-area: 4 / 2 / 5 / 3;
+    font-size: 0.875em;
+}
+
+.header_layout_container {
+    display: grid; 
+    grid-template-columns: 200px auto; 
+    /* align-items: center; */
+    gap: 32px;
+}
+
+@media (max-width: 1350px) {
+    .links_layout_container {
+        grid-template-columns: 0fr 1fr 1fr 1fr 1fr 0fr;
+    }
+}
+
+.headshot {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.header_layout_container > div > :not(.header_title) {
+    margin: 0;
+    font-size: 1em;
+}
+
+.header_title {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.layout_container {
+    display: grid;
+    grid-template-columns: 3fr 10fr 3fr;
+    grid-template-rows: 1fr 10fr 2fr auto 2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+* {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+.nomargin {
+    margin: 0;
+}
+
+.seperator {
+    border-bottom: 1px solid rgba(5, 5, 5, 0.125);
+}
+
+.topics_highlight {
+    color:blueviolet;
+}
+
+/* a:visited { color: LinkText; } */
+
+.project_layout_container {
+    display: grid;
+    grid-template-columns: 3fr 8fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+}
+
+.project_layout_container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.selected_paper_layout_container {
+    display: grid;
+    grid-template-columns: 3fr 8fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+}
+
+.selected_paper_layout_container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.full_paper_layout_container {
+    display: grid;
+    grid-template-columns: 3fr 8fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+}
+
+.full_paper_layout_container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 800px) {
+    .header_layout_container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .full_paper_layout_container,
+    .selected_paper_layout_container,
+    .project_layout_container {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+}</style>
+</head>
+<body>
+     <div class="layout_container">
+        <div class="header_container">
+            <header class="header_layout_container">
+    <img src="static/me.png" alt="Headshot of Maxim Khanov" class="headshot">
+    <div>
+        <p class="header_title">Maxim A. Khanov</p>
+        <br>
+        <p>B.S. Student in Computer Sciences</p>
+        <p><a href="https://cdis.wisc.edu">Computer Information Data Sciences</a></p>
+        <p><a href="https://www.wisc.edu">University of Wisconsin-Madison</a></p>
+        <br>
+        <p>mkhanov [at] wisc [dot] edu</p>
+        <p><a href="static/fullcv.pdf">CV</a> / <a href="https://scholar.google.com/citations?user=lQoe50YAAAAJ&hl=en&oi=ao">Google Scholar</a> / <a href="https://github.com/maximkha">Github</a></p>
+    </div>
+</header>
+        </div>
+        <div class="links_container seperator">
+            <div class="links_layout_container">
+                <div></div>
+                <a href="index.html">Home</a>
+                <a href="stats.html">Statistics</a>
+                <a href="pubs.html">Publications</a>
+                <a href="projects.html">Projects</a>
+                <div></div>
+            </div>
+        </div>
+        <div class="page_container">
+            <p>I’m Max, a fourth year student studying computer science at the <a
+href="https://www.wisc.edu">University of Wisconsin-Madison</a>.</p>
+<p>Outside of taking classes, I am greatful to do research under the
+supervision of <a href="https://pages.cs.wisc.edu/~sharonli/">Dr. Sharon
+Li</a> and <a href="https://sites.google.com/view/esraakbas">Dr. Esra
+Akbas</a>.</p>
+<p>My core research interests center on understanding the
+<strong>internal representations of LLMs</strong> (<span
+class="topics_highlight">Representations</span>) and developing
+<strong>computationally efficient</strong> (<span
+class="topics_highlight">Efficiency</span>) methods that leverage this
+understanding. I believe that by solving these fundamental problems, we
+can address key challenges in <strong>AI safety</strong> (<span
+class="topics_highlight">Safety</span>) while ensuring capable models
+remain accessible regardless of resource constraints. I’m also
+interested in the <strong>social aspects</strong> (<span
+class="topics_highlight">Social</span>) of technology. In the past, I
+also worked on graph neural networks (<span
+class="topics_highlight">GNNs</span>).</p>
+<p><strong>Ultimately</strong>, I aim to develop representation-driven
+efficient methods that eliminate the massive computational barriers
+currently preventing broader access to safe, capable, and continually
+up-to-date models.</p>
+<p>I am greatful to have recieved the <a
+href="https://goldwaterscholarship.gov">Barry-Goldwater scholarship</a>
+for my research work.</p>
+<div class="seperator">
+
+</div>
+<h3 id="news">News</h3>
+<p><strong>[2025/2/2]</strong> Our paper <a
+href="https://openreview.net/forum?id=wVDR2qmE28">“How Contaminated Is
+Your Benchmark? Quantifying Dataset Leakage in Large Language Models
+with Kernel Divergence”</a> was accepted to <a
+href="https://icml.cc">ICML</a> (<span
+class="topics_highlight">Representations</span>)</p>
+<p><strong>[2024/10/4]</strong> Recieved the <a
+href="https://goldwaterscholarship.gov">Barry-Goldwater
+scholarship</a></p>
+<p><strong>[2024/9/5]</strong> Invited as <a
+href="https://iclr.cc">ICLR</a> 2025 Reviewer *</p>
+<p><strong>[2024/9/4]</strong> Peer Mentor for ECE 331 - Introduction to
+Random Signal Analysis and Statistics</p>
+<p><strong>[2023/10/13]</strong> Our paper <a
+href="https://openreview.net/forum?id=shgx0eqdw6">“Alignment as
+Reward-Guided Search”</a> was accepted to <a
+href="https://iclr.cc">ICLR</a> (<span class="topics_highlight">Social,
+Safety, Efficiency</span>)</p>
+<p><strong>[2023/6/1]</strong> Started REU under the supervision of <a
+href="https://pages.cs.wisc.edu/~sharonli/">Dr. Sharon Li</a></p>
+<p><strong>[2023/5/25]</strong> Our paper <a
+href="https://openreview.net/forum?id=29RmzyqeWe&amp;referrer=%5Bthe%20profile%20of%20Esra%20Akbas%5D(%2Fprofile%3Fid%3D~Esra_Akbas2)">“MPool:
+Motif-Based Graph Pooling”</a> was accepted to <a
+href="https://pakdd.org">PAKDD</a> (<span
+class="topics_highlight">GNNs</span>)</p>
+<p><em>* - Declined due to scheduling conflicts.</em></p>
+<div class="seperator">
+
+</div>
+<h3 id="selected-publications">Selected Publications</h3>
+<p><div class="selected_paper_layout_container">
+    <img src="static/kds.png">
+    <div>
+        <h3><a href="https://openreview.net/forum?id=wVDR2qmE28">How Contaminated Is Your Benchmark? Quantifying Dataset Leakage in Large Language Models with Kernel Divergence</a></h1>
+        <p>Hyeong Kyu Choi*, <u>Maxim Khanov*</u>, Hongxin Wei, Yixuan Li</p>
+        <p>Accepted to <a href="https://icml.cc">ICML</a> (Topics: <span class="topics_highlight">Representations</span>)</p>
+        <p>Together with Froilan (Hyeong Kyu Choi), we introduced a distributional perspective based on fine-tuning dynamics to quantify dataset leakage in LLMs. Improving on previous baselines that only consider instance wise membership detection.</p>
+    </div>
+
+    <img src="static/args.png">
+    <div>
+        <h3><a href="https://openreview.net/forum?id=shgx0eqdw6">Alignment as Reward-Guided Search</a></h1>
+        <p><u>Maxim Khanov*</u>, Jirayu Burapacheep*, Yixuan Li</p>
+        <p>Accepted to <a href="https://iclr.cc">ICLR</a> (Topics: <span class="topics_highlight">Social, Safety, Efficiency</span>)</p>
+        <p>Alongside with Top (Jirayu Burapacheep), we introduced ARGS which reframes the LLM alignment problem as an inference time reward guided search.</p>
+    </div>
+
+    <img src="static/covid_effects.png">
+    <div>
+        <h3><a href="https://ieeexplore.ieee.org/document/9679951">Effects of COVID-19 on individuals in Opioid Addiction Recovery</a></h1>
+        <p>Khaled Mohammed Saifuddin, Esra Akbas, <u>Max Khanov</u>, Jason Beaman</p>
+        <p>Accepted to <a href="https://www.icmla-conference.org">ICMLA</a> (Topics: <span class="topics_highlight">Social</span>)</p>
+        <p>We applied machine learning to Twitter data to quantify the impact of the COVID-19 pandemic on individuals in opioid addiction recovery.</p>
+    </div>
+</div>
+<p class="nomargin">* - denotes equal contribution</p></p>
+        </div>
+     </div>
+</body>
+</html>
