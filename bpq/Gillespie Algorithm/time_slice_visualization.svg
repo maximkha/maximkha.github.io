@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#222"/>
+    </marker>
+    <style>
+      .label { font: 22px Arial, Helvetica, sans-serif; fill: #222; }
+      .small { font: 18px Arial, Helvetica, sans-serif; fill: #444; }
+      .math { font: italic 22px Georgia, 'Times New Roman', serif; fill: #111; }
+      .mathBlue { font: italic 22px Georgia, 'Times New Roman', serif; fill: #246BCE; }
+      .mathPink { font: italic 22px Georgia, 'Times New Roman', serif; fill: #D84D9B; }
+      .tick { stroke: #222; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="390" fill="white"/>
+
+  <!-- Timeline baseline -->
+  <line x1="145" y1="155" x2="1060" y2="155" stroke="#222" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Blue accumulated interval -->
+  <rect x="180" y="105" width="610" height="100" rx="10" fill="#DCEAFE" stroke="#246BCE" stroke-width="4"/>
+  <text x="485" y="145" text-anchor="middle" class="label" fill="#246BCE">No reaction has occurred so far</text>
+  <text x="485" y="179" text-anchor="middle" class="mathBlue">P₀(τ′)</text>
+
+  <!-- Pink infinitesimal slice -->
+  <rect x="790" y="105" width="150" height="100" rx="10" fill="#FBE0F0" stroke="#D84D9B" stroke-width="4"/>
+  <text x="865" y="142" text-anchor="middle" class="small" fill="#D84D9B">next slice</text>
+  <text x="865" y="172" text-anchor="middle" class="mathPink">dτ′</text>
+
+  <!-- Ticks -->
+  <line x1="180" y1="90" x2="180" y2="220" class="tick"/>
+  <line x1="790" y1="90" x2="790" y2="220" class="tick"/>
+  <line x1="940" y1="90" x2="940" y2="220" class="tick"/>
+
+  <!-- Time labels -->
+  <text x="180" y="258" text-anchor="middle" class="math">t</text>
+  <text x="790" y="258" text-anchor="middle" class="math">t + τ′</text>
+  <text x="940" y="258" text-anchor="middle" class="math">t + τ′ + dτ′</text>
+
+  <!-- Explanatory brackets -->
+  <line x1="180" y1="290" x2="790" y2="290" stroke="#246BCE" stroke-width="3"/>
+  <line x1="180" y1="280" x2="180" y2="300" stroke="#246BCE" stroke-width="3"/>
+  <line x1="790" y1="280" x2="790" y2="300" stroke="#246BCE" stroke-width="3"/>
+  <text x="485" y="328" text-anchor="middle" class="small" fill="#246BCE">Probability of no reaction on (t, t + τ′)</text>
+
+  <line x1="790" y1="290" x2="940" y2="290" stroke="#D84D9B" stroke-width="3"/>
+  <line x1="790" y1="280" x2="790" y2="300" stroke="#D84D9B" stroke-width="3"/>
+  <line x1="940" y1="280" x2="940" y2="300" stroke="#D84D9B" stroke-width="3"/>
+  <text x="865" y="328" text-anchor="middle" class="small" fill="#D84D9B">no reaction in this slice</text>
+  <text x="865" y="356" text-anchor="middle" class="mathPink">1 − Σᵢ₌₁ᴹ aᵢ dτ′</text>
+</svg>

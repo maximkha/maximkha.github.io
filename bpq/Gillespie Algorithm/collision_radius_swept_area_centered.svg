@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="680" viewBox="428 0 650 680" role="img" aria-labelledby="title desc">
+  <title id="title">Collision radius and swept collision area</title>
+  <desc id="desc">A blue molecule with a red annulus extending its radius to the collision radius r1 plus r2. A gray swept collision region extends over vector v12 multiplied by the time interval δt, while a longer vector v12 shows the unscaled relative velocity.</desc>
+
+  <rect x="428" y="0" width="650" height="680" fill="#f2f2f2"/>
+
+  <!-- Gray swept collision area -->
+  <line x1="840" y1="220" x2="680.0" y2="412.1"
+        stroke="#b9b9b9" stroke-width="320" stroke-linecap="round"/>
+
+  <!-- Far end of swept region -->
+  <circle cx="680.0" cy="412.1" r="160"
+          fill="none" stroke="#000" stroke-width="3" stroke-dasharray="10 10"/>
+
+  <!-- Effective collision cross section: RED ANNULUS with BLACK outer border -->
+  <circle cx="840" cy="220" r="160"
+          fill="#d94b4b" stroke="#000" stroke-width="7"/>
+
+  <!-- Molecule itself -->
+  <circle cx="840" cy="220" r="80"
+          fill="#4b78d9" stroke="#000" stroke-width="6"/>
+  <circle cx="840" cy="220" r="7" fill="#000"/>
+
+  <!-- Collision radius r1 + r2 -->
+  <line x1="840" y1="220" x2="1000" y2="220"
+        stroke="#000" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="1000" cy="220" r="5" fill="#000"/>
+
+  <text x="890" y="118"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="28"
+        font-style="italic"
+        font-weight="600"
+        fill="#000">
+    r<tspan baseline-shift="sub" font-size="19" font-style="normal">1</tspan>
+    + r<tspan baseline-shift="sub" font-size="19" font-style="normal">2</tspan>
+  </text>
+
+  <!-- Long relative velocity vector -->
+  <line x1="840" y1="220" x2="537.8" y2="582.6"
+        stroke="#000" stroke-width="6" stroke-linecap="round"/>
+  <polygon points="519.9,604.1 527.8,574.3 547.8,590.9"
+           fill="#000"/>
+
+  <!-- Vector v_12 label, offset from the shaft -->
+  <g transform="translate(513.9,651.1)">
+    <text x="0" y="0"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="31"
+          font-style="italic"
+          font-weight="600"
+          fill="#000">
+      v<tspan baseline-shift="sub" font-size="20" font-style="normal">12</tspan>
+    </text>
+    <!-- vector arrow over v -->
+    <line x1="-15" y1="-30" x2="8" y2="-30" stroke="#000" stroke-width="2.4"/>
+    <polygon points="8,-30 1,-34 1,-26" fill="#000"/>
+  </g>
+
+  <!-- Swept displacement vector v_12 dt -->
+  <line x1="674.8" y1="82.4" x2="514.8" y2="274.4"
+        stroke="#000" stroke-width="4"/>
+  <polygon points="674.8,82.4 670.0,99.1 659.2,90.2" fill="#000"/>
+  <polygon points="514.8,274.4 519.7,257.6 530.4,266.6" fill="#000"/>
+
+  <line x1="661.0" y1="70.8"
+        x2="688.7" y2="93.9"
+        stroke="#000" stroke-width="4"/>
+  <line x1="501.0" y1="262.9"
+        x2="528.6" y2="285.9"
+        stroke="#000" stroke-width="4"/>
+
+  <!-- v_12 dt label, offset away from dimension line -->
+  <g transform="translate(568.7,156.6)">
+    <text x="0" y="0"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="29"
+          font-style="italic"
+          font-weight="600"
+          fill="#000">
+      v<tspan baseline-shift="sub" font-size="19" font-style="normal">12</tspan>
+      <tspan font-style="normal"> · δt</tspan>
+    </text>
+    <!-- vector arrow over v -->
+    <line x1="-36" y1="-28" x2="-14" y2="-28" stroke="#000" stroke-width="2.2"/>
+    <polygon points="-14,-28 -21,-32 -21,-24" fill="#000"/>
+  </g>
+
+  <!-- Point x in the swept gray region -->
+  <g aria-label="point x">
+    <circle cx="610" cy="390" r="7" fill="#000"/>
+    <text x="630" y="378"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="30"
+          font-style="italic"
+          font-weight="600"
+          fill="#000">x</text>
+  </g>
+
+</svg>

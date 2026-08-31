@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">Two spheres with labeled radii</title>
+  <desc id="desc">A smaller red sphere on the left labeled molecule 2 and a larger blue sphere on the right labeled molecule 1. Each sphere has a solid front equator, a dashed back equator, and a radius line labeled r_2 or r_1.</desc>
+
+  <!-- Background -->
+  <rect width="1200" height="650" fill="#f2f2f2"/>
+
+  <!-- Left sphere: red, smaller -->
+  <circle cx="350" cy="280" r="135" fill="#d94b4b" stroke="#000" stroke-width="7"/>
+
+  <!-- Left sphere equator: back -->
+  <path d="M 215 280 C 245 212, 455 212, 485 280"
+        fill="none"
+        stroke="#000"
+        stroke-width="7"
+        stroke-dasharray="16 16"
+        stroke-linecap="butt"/>
+
+  <!-- Left sphere equator: front -->
+  <path d="M 215 280 C 245 348, 455 348, 485 280"
+        fill="none"
+        stroke="#000"
+        stroke-width="7"
+        stroke-linecap="round"/>
+
+  <!-- Left sphere radius -->
+  <line x1="350" y1="280" x2="432" y2="175"
+        stroke="#000"
+        stroke-width="6"
+        stroke-linecap="round"/>
+
+  <!-- Left sphere points -->
+  <circle cx="350" cy="280" r="7" fill="#000"/>
+  <circle cx="432" cy="175" r="6" fill="#000"/>
+
+  <!-- Left sphere radius label -->
+  <text x="382" y="200"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="30"
+        font-style="italic"
+        font-weight="600"
+        fill="#000">
+    r<tspan baseline-shift="sub" font-size="20" font-style="normal">2</tspan>
+  </text>
+
+  <!-- Left sphere molecule label -->
+  <text x="350" y="490"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="34"
+        font-weight="500"
+        fill="#000">molecule 2</text>
+
+  <!-- Right sphere: blue, larger -->
+  <circle cx="835" cy="270" r="190" fill="#4b78d9" stroke="#000" stroke-width="7"/>
+
+  <!-- Right sphere equator: back -->
+  <path d="M 645 270 C 695 175, 975 175, 1025 270"
+        fill="none"
+        stroke="#000"
+        stroke-width="7"
+        stroke-dasharray="16 16"
+        stroke-linecap="butt"/>
+
+  <!-- Right sphere equator: front -->
+  <path d="M 645 270 C 695 365, 975 365, 1025 270"
+        fill="none"
+        stroke="#000"
+        stroke-width="7"
+        stroke-linecap="round"/>
+
+  <!-- Right sphere radius -->
+  <line x1="835" y1="270" x2="955" y2="125"
+        stroke="#000"
+        stroke-width="6"
+        stroke-linecap="round"/>
+
+  <!-- Right sphere points -->
+  <circle cx="835" cy="270" r="8" fill="#000"/>
+  <circle cx="955" cy="125" r="7" fill="#000"/>
+
+  <!-- Right sphere radius label -->
+  <text x="880" y="145"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="32"
+        font-style="italic"
+        font-weight="600"
+        fill="#000">
+    r<tspan baseline-shift="sub" font-size="21" font-style="normal">1</tspan>
+  </text>
+
+  <!-- Right sphere molecule label -->
+  <text x="835" y="500"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="34"
+        font-weight="500"
+        fill="#000">molecule 1</text>
+</svg>

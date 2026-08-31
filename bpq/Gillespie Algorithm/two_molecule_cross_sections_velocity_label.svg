@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">Two molecular cross sections with radii and velocity</title>
+  <desc id="desc">A smaller red circular cross section labeled molecule 2 with radius r2, and a larger blue circular cross section labeled molecule 1 with radius r1. A long velocity vector labeled v12 starts at the center of molecule 2 and points toward the bottom left.</desc>
+
+  <rect width="1200" height="650" fill="#f2f2f2"/>
+
+  <!-- Molecule 1 -->
+  <circle cx="320" cy="255" r="110"
+          fill="#d94b4b" stroke="#000" stroke-width="7"/>
+
+  <line x1="320" y1="255" x2="395" y2="175"
+        stroke="#000" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="320" cy="255" r="7" fill="#000"/>
+  <circle cx="395" cy="175" r="6" fill="#000"/>
+
+  <text x="430" y="170"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="32"
+        font-style="italic"
+        font-weight="600"
+        fill="#000">
+    r<tspan baseline-shift="sub" font-size="21" font-style="normal">2</tspan>
+  </text>
+
+  <text x="320" y="435"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="34"
+        font-weight="500"
+        fill="#000">molecule 2</text>
+
+  <!-- Molecule 2 -->
+  <circle cx="825" cy="245" r="165"
+          fill="#4b78d9" stroke="#000" stroke-width="7"/>
+
+  <line x1="825" y1="245" x2="935" y2="120"
+        stroke="#000" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="825" cy="245" r="8" fill="#000"/>
+  <circle cx="935" cy="120" r="7" fill="#000"/>
+
+  <text x="975" y="118"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="34"
+        font-style="italic"
+        font-weight="600"
+        fill="#000">
+    r<tspan baseline-shift="sub" font-size="22" font-style="normal">1</tspan>
+  </text>
+
+  <!-- Velocity vector -->
+  <line x1="825" y1="245" x2="520.3" y2="535.7"
+        stroke="#000"
+        stroke-width="6"
+        stroke-linecap="round"/>
+
+  <polygon points="500,555 511.3,526.3 529.2,545.1"
+           fill="#000"/>
+
+  <!-- Velocity label with vector arrow -->
+  <g transform="translate(625,395)">
+    <text x="0" y="0"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="32"
+          font-style="italic"
+          font-weight="600"
+          fill="#000">
+      v<tspan baseline-shift="sub" font-size="21" font-style="normal">12</tspan>
+    </text>
+
+    <!-- Vector arrow over v -->
+    <line x1="-19" y1="-31" x2="6" y2="-31"
+          stroke="#000" stroke-width="2.4" stroke-linecap="round"/>
+    <polygon points="6,-31 -2,-35 -2,-27" fill="#000"/>
+  </g>
+
+  <text x="825" y="500"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="34"
+        font-weight="500"
+        fill="#000">molecule 1</text>
+</svg>
